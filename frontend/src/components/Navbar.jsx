@@ -24,26 +24,26 @@ const Navbar = () => {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 shadow-[0_10px_30px_rgba(15,23,42,0.08)] backdrop-blur-lg' : 'bg-transparent'}`}>
-      <nav className="mx-auto flex max-w-6xl items-center gap-6 px-5 py-2 sm:px-8">
+      <nav className="mx-auto flex h-[78px] max-w-[954px] items-center px-5 sm:px-8 lg:px-0">
         <a href="#home" className="flex items-center gap-3" aria-label="EasyLane home">
-          <img src={logo} alt="EasyLane Logo" className="h-12 w-auto object-contain" />
+          <img src={logo} alt="EasyLane Logo" className="h-[80px] w-auto object-contain" />
         </a>
 
-        <div className="hidden flex-1 items-center justify-center gap-7 lg:flex">
+        <div className="hidden flex-1 items-center justify-center gap-8 lg:flex">
           {navigationLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="inline-flex items-center gap-1 text-sm font-semibold text-slate-700 transition-colors duration-200 hover:text-[#2563EB]"
+              className="inline-flex items-center gap-1 text-[12px] font-bold text-[#071837] transition-colors duration-200 hover:text-[#2563EB]"
             >
               {link.label}
-              <ChevronDown size={14} />
+              <ChevronDown size={11} strokeWidth={2.5} />
             </a>
           ))}
         </div>
 
-        <div className="ml-auto hidden items-center gap-3 lg:flex">
-          <Button href="#contact" className="px-5 py-2.5 !rounded-[12px] bg-[#FACC15] text-[#111827] hover:bg-[#f0bf00]">Book a Demo</Button>
+        <div className="ml-auto mr-6 hidden items-center lg:flex">
+          <a href="#contact" className="inline-flex h-[37px] items-center gap-2 rounded-[7px] bg-[#ffe800] px-4 text-[10px] font-bold text-[#071837] transition-colors hover:bg-[#ffdc00]">Book a Demo <span aria-hidden="true">→</span></a>
         </div>
 
         <button
