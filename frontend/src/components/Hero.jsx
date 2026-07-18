@@ -13,7 +13,7 @@ const stats = [
 const Hero = () => (
   <section id="home" className="relative min-h-[678px] overflow-hidden bg-white">
     <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_88%_44%,rgba(27,94,255,.06),transparent_27%),radial-gradient(circle_at_14%_41%,rgba(255,233,0,.055),transparent_26%)]" />
-    <div className="relative mx-auto min-h-[678px] max-w-[954px] px-5 pt-28 sm:px-8 lg:grid lg:grid-cols-[45%_55%] lg:px-0 lg:pt-0">
+    <div className="site-container relative min-h-[678px] px-5 pt-28 sm:px-8 lg:grid lg:grid-cols-[42%_58%] lg:px-5 lg:pt-0">
       <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.45 }} className="relative z-10 lg:pt-[96px]">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-[#edf3ff] px-3 py-[7px] text-[9px] font-bold tracking-[-.015em] text-[#1358ff]">
           <span className="h-1.5 w-1.5 rounded-full bg-[#1358ff]" />
@@ -41,7 +41,7 @@ const Hero = () => (
         </div>
       </motion.div>
       <motion.div initial={{ opacity: 0, scale: 0.975 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="relative mt-10 w-full lg:mt-0 lg:flex lg:justify-end lg:self-start lg:pt-[54px]">
-        <div className="mx-auto w-full max-w-[525px] lg:mx-0 lg:w-full">
+        <div className="mx-auto w-full lg:mx-0 lg:w-[84%]">
           <HeroDashboard />
         </div>
       </motion.div>

@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 shadow-[0_10px_30px_rgba(15,23,42,0.08)] backdrop-blur-lg' : 'bg-transparent'}`}>
-      <nav className="mx-auto flex h-[78px] max-w-[954px] items-center px-5 sm:px-8 lg:px-0">
+      <nav className="site-container flex h-[78px] items-center px-4 sm:px-8 lg:px-0">
         <a href="#home" className="flex items-center gap-3" aria-label="EasyLane home">
-          <img src={logo} alt="EasyLane Logo" className="h-[80px] w-auto object-contain" />
+          <img src={logo} alt="EasyLane Logo" className="h-14 w-auto object-contain sm:h-16 lg:h-20" />
         </a>
 
         <div className="hidden flex-1 items-center justify-center gap-8 lg:flex">
@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {isMenuOpen ? (
         <div className="border-t border-slate-100 bg-white px-4 py-4 shadow-lg lg:hidden">
-          <div className="flex flex-col gap-3">
+          <div className="site-container flex flex-col gap-3">
             {navigationLinks.map((link) => (
               <a
                 key={link.label}

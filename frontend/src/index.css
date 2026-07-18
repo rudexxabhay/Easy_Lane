@@ -5,6 +5,8 @@
   font-family: 'Poppins', 'Inter', sans-serif;
   color: #111827;
   background: #ffffff;
+  --page-gutter: clamp(0rem, 4vw, 4.5rem);
+  --page-container: min(calc(100% - var(--page-gutter) - var(--page-gutter)), 1800px);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -31,6 +33,17 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+}
+
+/* Shared page container: wide on desktop, fluid below it, with consistent gutters. */
+.site-container,
+main .max-w-6xl,
+main .max-w-4xl,
+footer .max-w-6xl {
+  width: var(--page-container);
+  max-width: none;
+  margin-inline: auto;
 }
 
 i { display: block; height: 6px; margin: 9px 0; border-radius: 999px; background: rgba(148, 163, 184, .35); }
