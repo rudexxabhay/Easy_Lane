@@ -1,9 +1,11 @@
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home.jsx';
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-500">
-      <h1 className="text-5xl font-bold text-white">
-        Tailwind CSS Working ✅
-      </h1>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Home />
     </div>
   );
 }
