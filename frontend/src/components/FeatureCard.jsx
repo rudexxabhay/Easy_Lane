@@ -1,17 +1,12 @@
-import { ArrowUpRight } from 'lucide-react';
-
 const FeatureCard = ({ title, description, icon: Icon }) => {
   return (
-    <div className="group rounded-[28px] border border-slate-100 bg-white p-6 shadow-[0_15px_50px_rgba(17,24,39,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_70px_rgba(0,87,255,0.14)]">
-      <div className="flex items-center justify-between">
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0057FF]/10 text-[#0057FF]">
-          <Icon size={20} />
-        </div>
-        <ArrowUpRight className="text-slate-300 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-[#0057FF]" size={18} />
+    <article className="border-t border-white/15 pt-5 text-white first:border-t-0 sm:first:pt-0">
+      <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#1260ff]/60 bg-[#1260ff]/10 text-[#5b8aff] shadow-[0_0_22px_rgba(18,96,255,.18)]">
+        <Icon size={19} />
       </div>
-      <h3 className="mt-5 text-lg font-semibold text-slate-900">{title}</h3>
-      <p className="mt-2 text-sm leading-6 text-slate-500">{description}</p>
-    </div>
+      <h3 className="mt-4 text-[13px] font-bold">{title}</h3>
+      <p className="mt-2 text-[11px] leading-[1.65] text-white/65">{description}</p>
+    </article>
   );
 };
 

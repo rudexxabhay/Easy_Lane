@@ -1,16 +1,7 @@
-# React + Vite
+# Easy Lane frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The React/Vite client uses `VITE_API_BASE_URL` from `.env.example` and the centralized `src/lib/api.js` helper. It sends cookie credentials on every API request; no admin credential, password, token, or secret is stored in frontend environment variables or browser storage.
 
-Currently, two official plugins are available:
+Routes: `/`, `/book-demo`, `/admin/login`, and protected `/admin`. The admin client calls `/api/admin/auth/login`, `/me`, and `/logout` through the shared API helper. See the root README for backend configuration and manual startup instructions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+No command was executed during this change.

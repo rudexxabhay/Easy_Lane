@@ -4,15 +4,15 @@ const SectionTitle = ({ eyebrow, title, description, align = 'left' }) => {
   return (
     <div className={`max-w-2xl ${alignmentClass}`}>
       {eyebrow ? (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#0057FF]">
+        <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.08em] text-[#1260ff] sm:text-[11px]">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="text-3xl font-bold tracking-tight text-inherit sm:text-4xl">
+      <h2 className="text-[28px] font-extrabold leading-[1.14] tracking-[-0.045em] text-inherit sm:text-[34px]">
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-base leading-7 text-slate-500 sm:text-lg">
+        <p className="mt-4 text-[12px] leading-5 text-slate-500 sm:text-[13px]">
           {description}
         </p>
       ) : null}
